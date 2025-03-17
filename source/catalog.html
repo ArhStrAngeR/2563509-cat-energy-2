@@ -7,13 +7,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
   <header class="header">
     <a class="header__logo" href="#">
-      <img class="header__logo-image" src="images/logo_mobile.svg" alt="Cat energy" width="33" height="38" />
-      <img class="header__logo-title" src="images/logo_mobile2.svg" alt="Cat energy" width="33" height="38" />
+      <img class="header__logo-image" src="images/logo-mobile.svg" alt="Cat energy" width="33" height="38" />
+      <img class="header__logo-title" src="images/logo-text.svg" alt="Cat energy" width="33" height="38" />
     </a>
     <nav class="header__menu menu">
       <button class="menu-burger" type="button" name="menu-burger">Меню</button>
@@ -32,7 +37,13 @@
       <ul class="catalog__items">
         <li class="catalog__item">
           <div class="product-card">
-            <img src="images/catalog1.png" width="161" height="172" alt="Cat energy pro курица 500 г" />
+            <picture>
+              <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/catalog-1@1x.webp 1x, images/catalog-1@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog-1-mob@1x.webp 1x, images/catalog-1-mob@2x.webp 2x">
+
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-1@1x.png 1x, images/catalog-1@2x.png 2x">
+              <img src="images/catalog-1-mob@1x.png" srcset="images/catalog-1-mob@2x.png 2x" width="68" height="86" alt="Cat energy pro курица 500 г" />
+            </picture>
             <p class="product-card__title">Cat energy pro 500 г</p>
             <dl class="product-card__params">
               <div class="product-card__params-item">
@@ -53,7 +64,40 @@
         </li>
         <li class="catalog__item">
           <div class="product-card">
-            <img src="images/catalog2.png" width="161" height="172" alt="Cat energy pro курица 500 г" />
+            <picture>
+              <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/catalog-2@1x.webp 1x, images/catalog-2@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog-2-mob@1x.webp 1x, images/catalog-2-mob@2x.webp 2x">
+
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-2@1x.png 1x, images/catalog-2@2x.png 2x">
+              <img src="images/catalog-2-mob@1x.png" srcset="images/catalog-2-mob@2x.png 2x" width="68" height="86" alt="Cat energy pro курица 1000 г" />
+            </picture>
+            <p class="product-card__title">Cat energy pro 1000 г</p>
+            <dl class="product-card__params">
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Масса</dt>
+                <dd class="product-card__params-text">1000 г</dd>
+              </div>
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Вкус</dt>
+                <dd class="product-card__params-text">Курица</dd>
+              </div>
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Цена</dt>
+                <dd class="product-card__params-text">1000 ₽</dd>
+              </div>
+            </dl>
+            <button class="product-card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="product-card">
+            <picture>
+              <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/catalog-3@1x.webp 1x, images/catalog-3@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog-3-mob@1x.webp 1x, images/catalog-3-mob@2x.webp 2x">
+
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-3@1x.png 1x, images/catalog-3@2x.png 2x">
+              <img src="images/catalog-3-mob@1x.png" srcset="images/catalog-3-mob@2x.png 2x" width="68" height="86" alt="Cat energy pro рыба 500 г" />
+            </picture>
             <p class="product-card__title">Cat energy pro 500 г</p>
             <dl class="product-card__params">
               <div class="product-card__params-item">
@@ -62,7 +106,7 @@
               </div>
               <div class="product-card__params-item">
                 <dt class="product-card__params-text">Вкус</dt>
-                <dd class="product-card__params-text">Курица</dd>
+                <dd class="product-card__params-text">Рыба</dd>
               </div>
               <div class="product-card__params-item">
                 <dt class="product-card__params-text">Цена</dt>
@@ -74,8 +118,41 @@
         </li>
         <li class="catalog__item">
           <div class="product-card">
-            <img src="images/catalog3.png" width="161" height="172" alt="Cat energy pro курица 500 г" />
-            <p class="product-card__title">Cat energy pro 500 г</p>
+            <picture>
+              <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/catalog-4@1x.webp 1x, images/catalog-4@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog-4-mob@1x.webp 1x, images/catalog-4-mob@2x.webp 2x">
+
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-4@1x.png 1x, images/catalog-4@2x.png 2x">
+              <img src="images/catalog-4-mob@1x.png" srcset="images/catalog-4-mob@2x.png 2x" width="68" height="86" alt="Cat energy pro рыба 1000 г" />
+            </picture>
+            <p class="product-card__title">Cat energy pro 1000 г</p>
+            <dl class="product-card__params">
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Масса</dt>
+                <dd class="product-card__params-text">1000 г</dd>
+              </div>
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Вкус</dt>
+                <dd class="product-card__params-text">Курица</dd>
+              </div>
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Цена</dt>
+                <dd class="product-card__params-text">1000 ₽</dd>
+              </div>
+            </dl>
+            <button class="product-card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="product-card">
+            <picture>
+              <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/catalog-5@1x.webp 1x, images/catalog-5@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog-5-mob@1x.webp 1x, images/catalog-5-mob@2x.webp 2x">
+
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-5@1x.png 1x, images/catalog-5@2x.png 2x">
+              <img src="images/catalog-5-mob@1x.png" srcset="images/catalog-5-mob@2x.png 2x" width="68" height="86" alt="Cat energy slim гречка 500 г" />
+            </picture>
+            <p class="product-card__title">Cat energy slim 500 г</p>
             <dl class="product-card__params">
               <div class="product-card__params-item">
                 <dt class="product-card__params-text">Масса</dt>
@@ -83,7 +160,34 @@
               </div>
               <div class="product-card__params-item">
                 <dt class="product-card__params-text">Вкус</dt>
-                <dd class="product-card__params-text">Курица</dd>
+                <dd class="product-card__params-text">Гречка</dd>
+              </div>
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Цена</dt>
+                <dd class="product-card__params-text">400 ₽</dd>
+              </div>
+            </dl>
+            <button class="product-card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="product-card">
+            <picture>
+              <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/catalog-6@1x.webp 1x, images/catalog-6@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog-6-mob@1x.webp 1x, images/catalog-6-mob@2x.webp 2x">
+
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-6@1x.png 1x, images/catalog-6@2x.png 2x">
+              <img src="images/catalog-6-mob@1x.png" srcset="images/catalog-6-mob@2x.png 2x" width="68" height="86" alt="Cat energy slim гречка 1000 г" />
+            </picture>
+            <p class="product-card__title">Cat energy slim 1000 г</p>
+            <dl class="product-card__params">
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Масса</dt>
+                <dd class="product-card__params-text">1000 г</dd>
+              </div>
+              <div class="product-card__params-item">
+                <dt class="product-card__params-text">Вкус</dt>
+                <dd class="product-card__params-text">Гречка</dd>
               </div>
               <div class="product-card__params-item">
                 <dt class="product-card__params-text">Цена</dt>
@@ -95,8 +199,14 @@
         </li>
         <li class="catalog__item">
           <div class="product-card">
-            <img src="images/catalog4.png" width="161" height="172" alt="Cat energy pro курица 500 г" />
-            <p class="product-card__title">Cat energy pro 500 г</p>
+            <picture>
+              <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/catalog-7@1x.webp 1x, images/catalog-7@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog-7-mob@1x.webp 1x, images/catalog-7-mob@2x.webp 2x">
+
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-7@1x.png 1x, images/catalog-7@2x.png 2x">
+              <img src="images/catalog-7-mob@1x.png" srcset="images/catalog-7-mob@2x.png 2x" width="68" height="86" alt="Cat energy slim рис 500 г" />
+            </picture>
+            <p class="product-card__title">Cat energy slim 500 г</p>
             <dl class="product-card__params">
               <div class="product-card__params-item">
                 <dt class="product-card__params-text">Масса</dt>
@@ -104,74 +214,11 @@
               </div>
               <div class="product-card__params-item">
                 <dt class="product-card__params-text">Вкус</dt>
-                <dd class="product-card__params-text">Курица</dd>
+                <dd class="product-card__params-text">Рис</dd>
               </div>
               <div class="product-card__params-item">
                 <dt class="product-card__params-text">Цена</dt>
-                <dd class="product-card__params-text">700 ₽</dd>
-              </div>
-            </dl>
-            <button class="product-card__button" type="button">Заказать</button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <div class="product-card">
-            <img src="images/catalog5.png" width="161" height="172" alt="Cat energy pro курица 500 г" />
-            <p class="product-card__title">Cat energy pro 500 г</p>
-            <dl class="product-card__params">
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Масса</dt>
-                <dd class="product-card__params-text">500 г</dd>
-              </div>
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Вкус</dt>
-                <dd class="product-card__params-text">Курица</dd>
-              </div>
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Цена</dt>
-                <dd class="product-card__params-text">700 ₽</dd>
-              </div>
-            </dl>
-            <button class="product-card__button" type="button">Заказать</button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <div class="product-card">
-            <img src="images/catalog6.png" width="161" height="172" alt="Cat energy pro курица 500 г" />
-            <p class="product-card__title">Cat energy pro 500 г</p>
-            <dl class="product-card__params">
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Масса</dt>
-                <dd class="product-card__params-text">500 г</dd>
-              </div>
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Вкус</dt>
-                <dd class="product-card__params-text">Курица</dd>
-              </div>
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Цена</dt>
-                <dd class="product-card__params-text">700 ₽</dd>
-              </div>
-            </dl>
-            <button class="product-card__button" type="button">Заказать</button>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <div class="product-card">
-            <img src="images/catalog7.png" width="161" height="172" alt="Cat energy pro курица 500 г" />
-            <p class="product-card__title">Cat energy pro 500 г</p>
-            <dl class="product-card__params">
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Масса</dt>
-                <dd class="product-card__params-text">500 г</dd>
-              </div>
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Вкус</dt>
-                <dd class="product-card__params-text">Курица</dd>
-              </div>
-              <div class="product-card__params-item">
-                <dt class="product-card__params-text">Цена</dt>
-                <dd class="product-card__params-text">700 ₽</dd>
+                <dd class="product-card__params-text">500 ₽</dd>
               </div>
             </dl>
             <button class="product-card__button" type="button">Заказать</button>
@@ -179,7 +226,7 @@
         </li>
         <li class="catalog__item catalog__item--show-more">
           <div class="product-card">
-            <img src="images/catalog-plus.png" width="161" height="172" alt="Cat energy pro курица 500 г" />
+            <img src="icons/plus.svg" width="60" height="60" alt="Показать еще 100500 товаров" />
             <p class="product-card__title">Показать еще 100500 товаров</p>
             <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
             <button class="product-card__button" type="button">Показать все</button>
@@ -250,7 +297,7 @@
   </main>
 
   <footer class="footer">
-    <img class="footer__logo" width="128" height="24" src="images/logo_footer.svg" alt="Logo" />
+    <img class="footer__logo" width="128" height="24" src="images/logo-footer.svg" alt="Logo" />
     <ul class="socials">
       <li class="socials__item">
         <a class="socials__item-link socials__item-link--vk" href="#"><span class="visual-hidden">Мы в VK</span></a>
@@ -264,7 +311,6 @@
     </ul>
     <a class="footer__developer" href="#">
       <span class="footer__developer-description">HTML Academy</span>
-      <img class="footer__developer-img" src="images/logo_footer.svg" alt="Cat energy" width="33" height="38" />
     </a>
   </footer>
 </body>
